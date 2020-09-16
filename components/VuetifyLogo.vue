@@ -10,5 +10,7 @@
 .VuetifyLogo {
   height: 50px;
   width: 50px;
+  background-colour: blue;
+  transform: rotate(90)
 }
 </style>

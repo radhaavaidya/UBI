@@ -1,7 +1,7 @@
 <template> 
   <div> 
     <v-content>
-      <card/>
+      <grid/>
 
       
     </v-content>
