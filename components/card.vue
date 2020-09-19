@@ -21,6 +21,7 @@
       >
         Apply
       </v-btn>
+      
     </v-card-actions>
   </v-card>
 </template>

@@ -3,21 +3,59 @@
   <v-app id="inspire">
     
     <!--Header -->
-    <v-app-bar color="red" dark fixed app> 
-      <v-toolbar-title>Application</v-toolbar-title>
-       <!-- Component Example --> 
-      <VuetifyLogo/>
+    <UBIlogo/>
+    
+    <v-app-bar color="#E22026"  >
+      <v-btn color="#E22026" depressed small >
+        PRODUCTS
+      </v-btn>
+      
+      <v-btn color="#E22026" depressed small >
+       DIGITAL BANKING
+      </v-btn>
+
+      <v-btn color="#E22026" depressed small >
+        INVESTOR RELATIONS
+      </v-btn>
+
+      <v-btn color="#E22026" depressed small >
+        ABOUT US
+      </v-btn>
+
+      <v-btn color="#E22026" depressed small >
+        OTHERS
+      </v-btn>
+
+      <v-btn color="#E22026" depressed small >
+        WE CARE
+      </v-btn>
+      
+
+      <!-- <v-toolbar-title>Application</v-toolbar-title> -->
+       <!-- Component Example -->
+      <Ubilogo/> <tab/>
     </v-app-bar>
 
     <!-- Body -->
-    <v-content light> 
-      <nuxt /> 
+    
+    <v-content light>
+      <nuxt /> <v-img
+      class="mx-auto"
+      
+      src="footer.png"
+    >
+     
+    </v-img>
     </v-content>
     
-    <!-- Footer -->
-    <v-footer color="indigo" app>
-      <span class="white--text">&copy; {{ new Date().getFullYear() }}</span>
-    </v-footer>
+    <!-- Footer 
+
+    <v-footer color="#E22026" app>
+      <span class="white--text">&copy; 
+        
+              
+        {{ new Date().getFullYear() }}</span>
+    </v-footer>-->
 
   </v-app>
 </template>
@@ -33,6 +71,6 @@ export default {}
 
    #inspire {
     background-color: white;
-    color: black;
+    color: rgb(255, 255, 255);
   }
 </style>
