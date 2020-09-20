@@ -5,6 +5,7 @@
         <v-row>
           <h3> Online Debit Card Application </h3>
         </v-row>
+        
         <v-row>
           <v-col md="6">
             <applydebit/>
