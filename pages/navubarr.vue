@@ -1,12 +1,8 @@
 <template> 
-
   <div> 
-    
     <v-content>
       
-      <break/>
-          
-       
+    <navubarr/>
       
     </v-content>
   </div>

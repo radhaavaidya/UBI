@@ -1,16 +1,18 @@
 <template>
   <img
+    contain="false"
     class="ubilogo"
     alt="homepage"
     src="ubilogo.png"
-  >
+   >
   <!-- src is the image address -->
+  <!-- the custom class helps in defining the height and width of the logo  -->
 </template>
 
 
 <style>
-.ubilogo {
-  height:62px;
-  width: 170px;
-}
+  .ubilogo {
+    max-height: 60px;
+    max-width: 190px;
+  }
 </style>

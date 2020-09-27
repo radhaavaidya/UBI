@@ -3,24 +3,24 @@
 
     <v-row
     >
-    <v-col
-    v-for="i in 3"
-    :key=i
-    cols="12"
-    md="4"
-    sx="4"
-    lg="4"
-    >
-    
-      <v-card
-        class="ma-3 pa-3 mx-lg-auto"
-      >
-        <v-card-text>
-          3 cards
-        </v-card-text>
-      </v-card>
+      <v-col
+        v-for="i in 3"
+        :key=i
+        cols="12"
+        md="4"
+        sx="4"
+        lg="4"
+       >
+      
+        <v-card
+          class="ma-3 pa-3 mx-lg-auto"
+         >
+          <v-card-text>
+            3 cards
+          </v-card-text>
+        </v-card>
 
-    </v-col>
+      </v-col>
     </v-row>
    
 

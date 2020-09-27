@@ -4,17 +4,20 @@
     <v-container>
     
       <v-row>
-         <h3> Online Debit Card Application </h3>
+         <h3 class="hey"> Online Debit Card Application </h3>
+         
       </v-row>
+      
              <!-- h3 and h4- sizes of the text -->
-
-      <v-layout row justify-center>
+      <br>
+      <v-layout row justify-center class="hey">
          <h4> <p class="text-center">CUSTOMER DETAILS </p> </h4>
       </v-layout>
 
       <v-row justify="center"> 
-        <v-col cols="6">
+        <v-col cols="7" md="7" sm="7">
           <v-text-field ref="form"
+            dark="false"
             v-model="accountno"
             type="password"
             :rules="accountRules"
@@ -29,7 +32,7 @@
              <!-- counter shows number of characters alloweed -->
 
       <v-row justify="center"> 
-        <v-col cols="6">
+        <v-col cols="7" md="7" sm="7">
           <v-text-field ref="form"
            v-model="reaccountno"
             type="password"
@@ -42,7 +45,7 @@
      </v-row> 
 
      <v-row justify="center">
-        <v-col cols="6"> 
+        <v-col cols="7" md="7" sm="7"> 
           <v-text-field ref="form"
             v-model="email"
             :rules="emailRules"
@@ -51,19 +54,20 @@
           </v-text-field>
         </v-col>
      </v-row>
-
+      <!-- sm md helps in defining the grids in a perticular screen type like sm is for ipads xs is for all the phones md i the laptop screen,etc -->
      <v-row justify="center">
-        <v-col cols="3">
+        <v-col cols="3" md="4" sm="4">
           <v-img
            class="mx-auto"
-           height="80px"
+           max-height="100px"
+           max-width="220px"
            src="captcha.png">
           </v-img>
         </v-col>
       </v-row> 
 
-      <v-row justify="center">
-         <em text>**Required</em>
+      <v-row justify="center" >
+         <em text id="require">*Required</em>
       </v-row>
             <!-- Justify center aligns it to the centre -->
             <!-- em text makes the text italic -->
@@ -87,7 +91,8 @@
             <!-- href directs form one page to another -->
             <!-- :disabled ensures that the button is disabled till the form is filled -->
           <v-card>
-            <v-btn href="forms"
+            <v-btn href="forms" 
+
               icon dark @click="dialog = false">
                 <v-icon>
                   mdi-close
@@ -116,6 +121,12 @@
 </template>
 
 <style> 
+  .hey {
+    color: rgb(47, 64, 143);
+    font-family: Arial;
+  }
+  /* .hey is used to make a class and #is used to create a unique set */
+
   .black--text {
     border: 1px solid;
   }
@@ -124,8 +135,13 @@
     background-color: rgb(196, 193, 193);
     color: rgb(255, 255, 255);
   }
-</style>
+  
+  #require {
+    color: red;
+    font-family: Arial;
+  }
 
+</style>
 
 <script>
 

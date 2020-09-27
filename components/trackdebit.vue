@@ -1,31 +1,40 @@
 <template>
+  <container>
+    <v-col md="12" sm="12">
+      <v-card 
+        color="white"
+        class="mx-auto"
+        width="500"
+        >
+          <v-img
+            contain="false"
+            class="mx-auto"
+            max-height="300px"
+            max-width="400"
+            src="icons-02.jpg">
+          </v-img>
 
-  <v-card
-    class="mx-auto"
-    max-width="400">
-    
-    <v-img
-      class="mx-auto"
-      height="300px"
-      src="icons-02.jpg">
-    </v-img>
+          <v-card-text 
+            class="text--primary">
+          </v-card-text>
 
-    <v-card-text 
-      class="text--primary">
-    </v-card-text>
-
-    <v-card-actions>
-      <v-dialog v-model="dialog" persistent max-width="420">
-        <template v-slot:activator="{ on, attrs }">
-          <v-btn
-            color="primary"
-            dark
-            v-bind="attrs"
-            v-on="on" >
-            Online Debit Card Tracking
-          </v-btn> 
-        </template>
-      </v-dialog>
-    </v-card-actions>
-  </v-card>
+          <v-card-actions>
+            <v-dialog v-model="dialog" persistent max-width="420">
+              <template v-slot:activator="{ on, attrs }">
+                <v-btn
+                  max-width="380"
+                  block="true"
+                  text="true"
+                  color="blue darken-2"
+                  dark
+                  v-bind="attrs"
+                  v-on="on" >
+                  Online Debit Card Tracking
+                </v-btn> 
+              </template>
+            </v-dialog>
+          </v-card-actions>
+      </v-card>
+   </v-col>
+ </container>
 </template>
