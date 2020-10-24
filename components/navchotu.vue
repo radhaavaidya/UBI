@@ -7,19 +7,20 @@
     >
       <template v-slot:activator="{ on, attrs }">
         <v-btn
-          color="primary"
+          
+          text="true"
           dark
           v-bind="attrs"
           v-on="on"
           height="48"
           width="20"
         >
-          MENU
+          <v-app-bar-nav-icon></v-app-bar-nav-icon>
         </v-btn>
       </template>
 
-      <v-list>
-        <v-list-item
+      <v-list color="#E22026">
+        <v-list-item  
           v-for="(item, index) in items"
           :key="index"
         >

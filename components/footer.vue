@@ -1,51 +1,5 @@
 <template>
-  <!--Your App Starts Here -->
-  <v-app id="inspire">
-    
-    <!--Header -->
-    <v-app-bar color="#E22026" dark fixed app>
-      <!-- <v-toolbar-title>Application</v-toolbar-title> -->
-       <!-- Component Example -->
-
-      <logoubi/> 
-      <v-col> </v-col>
-      <v-row class="hidden-sm-and-down">
-         <navbaring/> 
-      </v-row> 
-      <v-row class="hidden-md-and-up">
-        <v-col sm="9"></v-col>
-        <v-col sm="1" class="mb-sm-2 ma-sm-2 mb-2 ma-2 mx-0" >
- <!-- the class helps in defining the placement and sizing of the menu button in different screen sizes -->
- <!-- class hidden helps in hiding the navigation bar under those conditions -->
-         <navchotu/>
-        </v-col>
-      </v-row>
-      
-  
-      <!-- the universal navigation bar -->
-      
-    </v-app-bar>
-
-    <!-- Body -->
-    
-    <v-content light>
-
-      <bed/>
-      <!-- breadcrumb -->
-
-      <nuxt /> 
-      
-    </v-content>
-
-     <!--footer  -->
-
-    <!-- <v-footer 
-    color="#DA2627"> -->
-      <!-- <v-img
-       class="mx-auto"
-       src="footer.png" >
-      </v-img> -->
-       <v-footer
+  <v-footer
      class= "mt-lag-16 mt-md-16 mt-sm-16 mt-16"
      color="#DA2627"
   >
@@ -53,7 +7,7 @@
     <v-row>
       <v-col
        cols="12"
-       sm= "2"
+       sm= "3"
        md= "3"
        >
 
@@ -75,8 +29,8 @@
       
        <v-col
        cols="12"
-       sm= "2"
-       md= "2"
+       sm= "3"
+       md= "3"
        > 
 
        <h3> Useful Links </h3>
@@ -100,8 +54,8 @@
 
       <v-col
        cols="12"
-       sm= "2"
-       md= "2"
+       sm= "3"
+       md= "3"
        >
 
        <h3> Resources </h3>
@@ -122,7 +76,7 @@
 
       <v-col
        cols="12"
-       sm= "2"
+       sm= "3"
        md= "3"
        >
 
@@ -144,75 +98,61 @@
 
       <v-col
        cols="12"
-       sm= "2"
-       md= "2"
+       sm= "3"
+       md= "3"
        >
 
        <h3> Connect with us on </h3>
        <v-divider> </v-divider>
        <br>
-      <v-container>
         <v-row>
-
-          <v-col cols="12" sm="3" md="3">
-          <v-btn icon >
-            <v-icon> mdi-instagram </v-icon>
-          </v-btn> 
-
-          <v-btn icon >
-            <v-icon> mdi-whatsapp </v-icon>
-          </v-btn>
-          
-          </v-col>
-
-          <v-col cols="12" sm="3" md="3">
-            <v-btn icon >
-            <v-icon> mdi-facebook </v-icon>
+          <v-btn icon>
+            <v-icon size="24px">
+            {{ src="insta.png" }}
+          </v-icon>
           </v-btn>
 
-          <v-btn icon >
-            <v-icon> mdi-youtube </v-icon>
+          <v-btn icon>
+            <v-icon size="24px">
+            {{ src="fb.png" }}
+          </v-icon>
           </v-btn>
 
-          </v-col>
-
-          <v-col cols="12" sm="3" md="3">
-            <v-btn icon >
-            <v-icon> mdi-twitter </v-icon>
+          <v-btn icon>
+            <v-icon size="24px">
+            {{ src="twitter.png" }}
+          </v-icon>
           </v-btn>
-
-          <v-btn icon size="42px">
-            <v-icon> mdi-linkedin </v-icon>
-          </v-btn>
-
-          </v-col>
         </v-row>
 
         <v-row>
-          <v-btn text="true"> Report a Fraud </v-btn>
+          <v-btn icon>
+            <v-icon size="24px">
+            {{ src="whatsapp.png" }}
+          </v-icon>
+          </v-btn>
+
+          <v-btn icon>
+            <v-icon size="24px">
+            {{ src="yt.png" }}
+          </v-icon>
+          </v-btn>
+
+          <v-btn icon>
+            <v-icon size="24px">
+            {{ src="linkedin.png" }}
+          </v-icon>
+          </v-btn>
         </v-row>
-      </v-container> 
+
+        <v-row>
+          <v-btn> Report a Fraud </v-btn>
+        </v-row>
+        
       </v-col>
    </v-row>
 
   </v-container>
   </v-footer>
-    
-      
-  </v-app>
+
 </template>
-
-<script>
-export default {}
-</script>
-
-<style> 
-  .white--text {
-    border: 1px solid;
-  }
-
-   #inspire {
-    background-color: white;
-    color: rgb(255, 255, 255);
-  }
-</style>

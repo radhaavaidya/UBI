@@ -13,7 +13,8 @@
             max-width="400"
             src="icons-02.jpg">
           </v-img>
-
+          <!-- src is the link of the image in the static -->
+           <!-- max width and max height constrains the image within those dimentions -->
           <v-card-text 
             class="text--primary">
           </v-card-text>
@@ -22,6 +23,7 @@
             <v-dialog v-model="dialog" persistent max-width="420">
               <template v-slot:activator="{ on, attrs }">
                 <v-btn
+                  :disabled= true
                   max-width="380"
                   block="true"
                   text="true"

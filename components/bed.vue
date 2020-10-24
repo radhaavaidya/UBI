@@ -1,41 +1,41 @@
 <template>
   <div>
-    <v-breadcrumbs :items="items" divider="-"></v-breadcrumbs>
+    <v-breadcrumbs
+      :items="items"
+      large
+    ></v-breadcrumbs>
   </div>
 </template>
-
 <script>
   export default {
     data: () => ({
       items: [
         {
           text: 'Home',
-          disabled: false,
+          disabled: true,
           href: 'breadcrumbs_dashboard',
         },
         {
           text: 'Cards',
-          disabled: false,
+          disabled: true,
           href: 'breadcrumbs_link_1',
         },
         {
           text: 'Debit Cards',
-          disabled: false,
+          disabled: true,
           href: 'breadcrumbs_link_2',
         },
         {
           text: 'Classic Debit Card',
-          disabled: false,
+          disabled: true,
           href: 'breadcrumbs_link_2',
         },
         {
           text: 'Debit Card Application',
           disabled: false,
-          href: 'index',
+          href: 'breadcrumbs_link_2',
         },
-        
       ],
     }),
   }
-  // href direct to the page when clicked on the breadcrumb
 </script>
