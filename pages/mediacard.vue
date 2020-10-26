@@ -7,7 +7,7 @@
          <!-- h3 helps in defining the size of the font  -->
          <!-- hey is a custom class made to define the color and fornt family of the component -->
         </v-row>
-        
+        <v-divider color="red" width="240mm"> </v-divider>
         
         <v-row  
           class="hey">

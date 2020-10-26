@@ -5,25 +5,28 @@
     
       <v-row>
          <h3 class="hey"> Online Debit Card Application </h3>
-         
       </v-row>
-      
+         <v-divider color="red" width="240mm"> </v-divider>
+
              <!-- h3 and h4- sizes of the text -->
       <br>
       <v-layout row justify-center class="hey">
          <h4> <p class="text-center">CUSTOMER DETAILS </p> </h4>
+          
       </v-layout>
 
       <v-row justify="center"> 
         <v-col cols="7" md="7" sm="7">
           <v-text-field ref="form"
-            dark="false"
             v-model="accountno"
+            outlined
+            rounded
             type="password"
+            color="black" light fixed app
             :rules="accountRules"
             :counter="15"
             label="Account Number*"
-            filled>
+            >
           </v-text-field> 
         </v-col>
       </v-row> 
@@ -35,11 +38,13 @@
         <v-col cols="7" md="7" sm="7">
           <v-text-field ref="form"
            v-model="reaccountno"
+            color="black" light fixed app
             type="password"
             :rules="reaccountRules"
             :counter="15"
             label="Re-enter account Number*"
-            filled >
+            outlined
+            rounded>
           </v-text-field> 
         </v-col>
      </v-row> 
@@ -48,9 +53,11 @@
         <v-col cols="7" md="7" sm="7"> 
           <v-text-field ref="form"
             v-model="email"
+            color="black" light fixed app
             :rules="emailRules"
             label="Captcha*"
-            filled >
+            outlined
+            rounded >
           </v-text-field>
         </v-col>
      </v-row>
@@ -72,35 +79,41 @@
             <!-- Justify center aligns it to the centre -->
             <!-- em text makes the text italic -->
 
-      <v-card-actions>
-        <v-dialog v-model="dialog" persistent max-width="390">
+      <v-card-actions >
+        <v-dialog 
+        v-model="dialog" 
+        persistent height="300"
+        width="300" 
+        :rounded="rounded"
+            >
            <template v-slot:activator="{ on, attrs }">
              <v-row justify="center">
                <v-col cols="1">  
                  <v-btn 
                    :disabled="!isFormValid"
-                   color="primary"
+                   color="#DA2627"
                    dark
+                   rounded
                    v-bind="attrs"
                    v-on="on">
-                   OK  
+                    OK 
                  </v-btn> 
                </v-col>
              </v-row>
            </template>
             <!-- href directs form one page to another -->
             <!-- :disabled ensures that the button is disabled till the form is filled -->
-          <v-card>
+          <v-card color="white darken-2" class="hey">
             <v-btn href="forms" 
-
+               
               icon dark @click="dialog = false">
                 <v-icon>
                   mdi-close
                 </v-icon>
             </v-btn>
 
-              <v-card-title class="headline">
-                Successfully Applied For Online Debit Card
+              <v-card-title class="hey">
+                <h3> Successfully Applied For Online Debit Card </h3>
               </v-card-title>
         
               <v-card-actions>
@@ -132,7 +145,7 @@
   }
 
    #inspire {
-    background-color: rgb(196, 193, 193);
+    background-color: rgb(255, 255, 255);
     color: rgb(255, 255, 255);
   }
   

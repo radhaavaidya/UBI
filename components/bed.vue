@@ -1,8 +1,11 @@
 <template>
   <div>
     <v-breadcrumbs
+      text id="require"
       :items="items"
       large
+      color="black" light fixed app
+      
     ></v-breadcrumbs>
   </div>
 </template>
@@ -12,30 +15,38 @@
       items: [
         {
           text: 'Home',
-          disabled: true,
-          href: 'breadcrumbs_dashboard',
+          disabled: false,
+         
         },
         {
           text: 'Cards',
-          disabled: true,
-          href: 'breadcrumbs_link_1',
+          disabled: false,
+          
         },
         {
           text: 'Debit Cards',
-          disabled: true,
-          href: 'breadcrumbs_link_2',
+          disabled: false,
+    
         },
         {
           text: 'Classic Debit Card',
-          disabled: true,
-          href: 'breadcrumbs_link_2',
+          disabled: false,
+          
         },
         {
           text: 'Debit Card Application',
           disabled: false,
-          href: 'breadcrumbs_link_2',
+          href: 'mediacard',
         },
       ],
     }),
   }
 </script>
+
+<style scoped>
+#require {
+    color: red;
+    font-family: Arial;
+  }
+
+</style>

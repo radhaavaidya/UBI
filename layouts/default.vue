@@ -37,14 +37,6 @@
       
     </v-content>
 
-     <!--footer  -->
-
-    <!-- <v-footer 
-    color="#DA2627"> -->
-      <!-- <v-img
-       class="mx-auto"
-       src="footer.png" >
-      </v-img> -->
        <v-footer
      class= "mt-lag-16 mt-md-16 mt-sm-16 mt-16"
      color="#DA2627"

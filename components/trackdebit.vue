@@ -16,7 +16,9 @@
           <!-- src is the link of the image in the static -->
            <!-- max width and max height constrains the image within those dimentions -->
           <v-card-text 
+
             class="text--primary">
+            
           </v-card-text>
 
           <v-card-actions>
@@ -40,3 +42,12 @@
    </v-col>
  </container>
 </template>
+
+<style scoped>
+  
+  #require {
+    color: blue;
+    font-family: Arial;
+  }
+
+</style>
