@@ -24,7 +24,8 @@
           <v-card-actions>
             <v-dialog v-model="dialog" persistent max-width="420">
               <template v-slot:activator="{ on, attrs }">
-                <v-btn
+                <v-btn 
+                  
                   :disabled= true
                   max-width="380"
                   block="true"

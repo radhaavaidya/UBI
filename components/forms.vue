@@ -10,6 +10,7 @@
 
              <!-- h3 and h4- sizes of the text -->
       <br>
+             <!-- br is used to break the line and make the next component appear on the next line -->
       <v-layout row justify-center class="hey">
          <h4> <p class="text-center">CUSTOMER DETAILS </p> </h4>
           
@@ -32,8 +33,9 @@
       </v-row> 
              <!-- type password converts the content into bullets -->
              <!-- rules field according to the script enebles the reqired and the no. of characters required-->
-             <!-- counter shows number of characters alloweed -->
-
+             <!-- counter shows number of characters allowed to enter -->
+             <!-- color black lighr fixed app creates a black outline around the component and makes it distinct  -->
+             <!-- href is used to re direct to a different webpage -->
       <v-row justify="center"> 
         <v-col cols="7" md="7" sm="7">
           <v-text-field ref="form"
@@ -103,6 +105,7 @@
            </template>
             <!-- href directs form one page to another -->
             <!-- :disabled ensures that the button is disabled till the form is filled -->
+            <!-- rounded makes the shape of the edges rounded -->
           <v-card color="white darken-2" class="hey">
             <v-btn href="forms" 
                
@@ -111,13 +114,16 @@
                   mdi-close
                 </v-icon>
             </v-btn>
+            <!-- mdi is used before the icon name to enable it -->
 
               <v-card-title class="hey">
                 <h3> Successfully Applied For Online Debit Card </h3>
               </v-card-title>
+              <!-- class hey is the style made below to match the requirements -->
         
               <v-card-actions>
                 <v-spacer></v-spacer>
+                <!-- v-spacer adds space between two components in the row -->
 
                 <v-btn href="mediacard"
                   color="blue" 

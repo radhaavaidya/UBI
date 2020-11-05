@@ -4,19 +4,28 @@
     
     <!--Header -->
     <v-app-bar color="#E22026" dark fixed app>
-      <!-- <v-toolbar-title>Application</v-toolbar-title> -->
-       <!-- Component Example -->
 
       <logoubi/> 
+
       <v-col> </v-col>
-      <v-row class="hidden-sm-and-down">
+      <v-row 
+      class="hidden-sm-and-down">
          <navbaring/> 
       </v-row> 
+      
       <v-row class="hidden-md-and-up">
-        <v-col sm="9"></v-col>
+        <v-col sm="10">
+        </v-col>
+        
         <v-col sm="1" class="mb-sm-2 ma-sm-2 mb-2 ma-2 mx-0" >
- <!-- the class helps in defining the placement and sizing of the menu button in different screen sizes -->
- <!-- class hidden helps in hiding the navigation bar under those conditions -->
+           <!-- the class helps in defining the placement and sizing of the menu button in different screen sizes -->
+           <!-- class hidden helps in hiding the navigation bar under those conditions -->
+         
+      <v-btn icon>
+             <v-icon>mdi-magnify</v-icon>
+      </v-btn>
+      <!-- mdi is used for adding the icons -->
+
          <navchotu/>
         </v-col>
       </v-row>
@@ -52,7 +61,7 @@
        <h3> About Us </h3>
        <v-divider> </v-divider>
        <br>
-       <font size= "2"> 
+       <font size= "2" class= "okay"> 
          Overview <br> 
          Other Stakeholders' <br>
          Information <br>
@@ -64,6 +73,7 @@
          Regulatory Disclosures <br>
        </font>
       </v-col>
+      <!-- class okay is the custom class to define the colour and font -->
       
        <v-col
        cols="12"
@@ -74,7 +84,7 @@
        <h3> Useful Links </h3>
        <v-divider> </v-divider>
        <br>
-       <font size= "2"> 
+       <font size= "2" class="okay"> 
          Privacy <br> 
          Important messages <br>
          Apply for Credit Card <br>
@@ -99,7 +109,7 @@
        <h3> Resources </h3>
        <v-divider> </v-divider>
        <br>
-       <font size= "2"> 
+       <font size= "2" class="okay"> 
          We care for you <br> 
          Glossary <br>
          Watch Videos <br>
@@ -121,7 +131,7 @@
        <h3> Need Help </h3>
        <v-divider> </v-divider>
        <br>
-       <font size= "2"> 
+       <font size= "2" class="okay"> 
          FAOs <br> 
          Customer Care <br>
          Contact Us <br>
@@ -206,5 +216,10 @@ export default {}
    #inspire {
     background-color: white;
     color: rgb(255, 255, 255);
+  }
+
+  .okay {
+    color: rgb(243, 244, 247);
+    font-family: Arial;
   }
 </style>

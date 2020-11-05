@@ -14,10 +14,12 @@
           max-height="300px"
           max-width="400"
           src="icons-01.jpg">
-
         </v-img>
+
            <!-- src is the link of the image in the static -->
            <!-- max width and max height constrains the image within those dimentions -->
+           <!-- md and sm helps in specifying the amount of space it will take in different screens eg. 
+           sm is for i pad, md is for laptop screens, xs is for phones, etc -->
           <v-card-text class="text--primary">
           </v-card-text>
 
@@ -36,6 +38,7 @@
                 </v-btn> 
                 <!-- text = true makes the button take the color of the background and makes the background invisible  -->
                 <!-- block makes the button take maximum space available -->
+                <!-- color blue darken two makes the blue a shade darker than the original -->
               </template>
               <v-card color="white darken-2" class="hey">
                 <v-card-title 
@@ -80,5 +83,6 @@
     font-family: Arial;
 
   }
+  /* class hey helps in specifying the font and colour of the text used */
 
 </style>

@@ -15,4 +15,5 @@
     max-height: 60px;
     max-width: 190px;
   }
+  /* the height and width of the logo is defined  */
 </style>

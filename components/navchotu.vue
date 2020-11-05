@@ -1,4 +1,6 @@
 <template>
+
+
   <div class="text-center">
     <v-menu
       open-on-hover
@@ -15,8 +17,13 @@
           height="48"
           width="20"
         >
+        <!-- text =true-- the background of the button becomes the colour of the text on the button and the background behing the button disappears-->
           <v-app-bar-nav-icon></v-app-bar-nav-icon>
+
+        <!-- this is the icon for the hamburger on the navigation bar of small screen  -->
         </v-btn>
+
+        
       </template>
 
       <v-list color="#E22026">
@@ -30,6 +37,7 @@
     </v-menu>
   </div>
   <!-- items are defined in the scripts to make a list  -->
+
 </template>
  
 
